@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Fit On Main</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,104 +21,220 @@
 <header class="w3-container w3-theme w3-padding" id="myHeader">
   <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
   <div class="w3-center w3-blue-grey">
-
   <h1 class="w3-xxxlarge w3-animate-bottom">Fit On Main Studio</h1>
+    <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\logo.jpg" alt="logo" width= "200">
     <div class="w3-padding-32">
       <button class="w3-yellow w3-xlarge w3-white" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;"
     </button<!DOCTYPE html>
 <html>
 
-
-<!-- Modal -->
-<div id="sid01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1">
-        <span onclick="document.getElementById('id01').style.display='none'"
-        class="w3-button w3-display-topright">&times;</span>
-        <h4>https://www.google.com/maps/place/Fit+on+Main+Studio/@44.481009,-93.4304047,17z/data=!3m1!4b1!4m5!3m4!1s0x87f667f2c1202b73:0xfa40971cf9f08d8f!8m2!3d44.481009!4d-93.428216</h4>
-
-      </header>
-      <div class="w3-padding">
-        <p></p>
-
-      </div>
-      <footer class="w3-container w3-theme-l1">
-        <p>r</p>
-      </footer>
-    </div>
-</div>
-
+<!-- PiYo info -->
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
-  <h3>PYO</h3><br>
-  <img 
-  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-
-  <p>High energy, leg tightening movements</p>
-
-  </div>
+  <h3>PiYo</h3><br>
+  <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\piyo.png" alt="piyo" width="150">
+  <p>Fast-paced exercise inspired by aerobics, pilates, and yoga</p>
+</div>
 </div>
 
+<!-- POUND Info -->
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Standard CSS</h3><br>
-  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Standard CSS only</p>
-  <p>Easy to learn!</p>
-  <p>No need for jQuery</p>
-  <p>No JavaScript library</p>
-  </div>
+  <h3>POUND!</h3><br>
+  <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\pound.jpg" alt="pound" width="150">
+  <p>A unique and exhilarating total-body dynamic resistance and cardio workout that centers on drumming.</p>
+</div>
 </div>
 
+ <!-- Country Heat Info -->
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Design</h3><br>
-  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Paper like design</p>
-  <p>Bold colors and shadows</p>
-  <p>Equal across platforms</p>
-  <p>Equal across devices</p>
-  </div>
+  <h3>Country Heat</h3><br>
+  <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\countryheat.png" alt="countryheat" width="150">
+  <p>A mixture of cardio and also strength training. You’ll warm up by doing a series of quick paced moves.</p>
 </div>
 </div>
 
-<div class="w3-container">
-<hr>
-<div class="w3-center">
-
-
-
-
-
-
-
+<!--Slideshow-->
 <h2 class="w3-center">Slideshows</h2>
-<div class="w3-content" style="max-width:">
-  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
-  <img class="mySlides" src="/w3images/lights.jpg" style="width:100%">
-  <img class="mySlides" src="/w3images/mountains.jpg" style="width:100%">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-<div class="w3-row-padding w3 section">
-  <div class="w3-coll s4">
-    <img class="demo w3-opacity" src="img_nature_wisw.jpeg"
-    style="width:100%;display:none" onclick="currentDiv(1)">
-  </div>
-  <div class="w3-col s4">
-    <img class="demo w3-opacity" src="img_snow_wide.jpg"
-    style="width:100%;display:none" onclick="currentDiv(2)">
-  </div>
-  <div class="w3-col s4">
-    <img class="demo w3-opacity" src="img_mountains_wide.jpg"
-    style="width:100%;display:none" onclick="currentDiv(3)">
-  </div>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\pic1.jpg" alt="piyo" width="500">
+  <div class="text">Community Days Parade</div>
 </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\pic2.jpg" alt="piyo" width="500">
+  <div class="text">Pound Classmates</div>
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="C:\Users\Becky Daleiden\Documents\senior\Website project\pic3.jpg" alt="piyo" width="500">
+  <div class="text">Ribbon Cutting at Grand Opening</div>
+</div>
 
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
 <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+<!--map-->
+</script>
+  <html>
+  <body>
+
+    <h1>Google Map</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11386.665937829418!2d-93.43697076169596!3d44.48100866562427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f667f2c1202b73%3A0xfa40971cf9f08d8f!2sFit%20on%20Main%20Studio!5e0!3m2!1sen!2sus!4v1574806510750!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+  </body>
+  </html>
+<script>
+
 // Side navigation
 function w3_open() {
   var x = document.getElementById("mySidebar");
@@ -129,54 +246,6 @@ function w3_open() {
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
-
-// Tabs
-function openCity(evt, cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
-
-var mybtn = document.getElementsByClassName("testbtn")[0];
-mybtn.click();
-
-// Accordions
-function myAccFunc(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Slideshows
-var slideIndex = 1;
-
-function plusDivs(n) {
-  slideIndex = slideIndex + n;
-  showDivs(slideIndex);
-}
-
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-
-showDivs(1);
 
 // Progress Bars
 function move() {
